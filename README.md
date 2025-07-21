@@ -26,11 +26,10 @@ O arquivo `validacoes_qa.sql` realiza as seguintes validações:
 - Em auditorias manuais no banco
 
 ---
-
-## 📂 Estrutura
 ## 📂 Estrutura
 
 - `validacoes_qa.sql`: script principal com consultas SQL para validações manuais
 - `README.md`: este arquivo com instruções e explicações
-
+- `README.md`: este arquivo com instruções e explicações
+- `bdd_validacoes.txt: validação de dados no banco para usuários
 
