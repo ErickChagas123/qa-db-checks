@@ -28,4 +28,9 @@ O arquivo `validacoes_qa.sql` realiza as seguintes validações:
 ---
 
 ## 📂 Estrutura
+## 📂 Estrutura
+
+- `validacoes_qa.sql`: script principal com consultas SQL para validações manuais
+- `README.md`: este arquivo com instruções e explicações
+
 
