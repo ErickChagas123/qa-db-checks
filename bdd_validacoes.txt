@@ -1,0 +1,30 @@
+Funcionalidade: Validação de dados no banco para usuários
+
+  Como um analista de QA
+  Quero validar os dados armazenados no banco de dados
+  Para garantir a integridade e consistência das informações
+
+  Cenário: Verificar usuários sem e-mail
+    Dado que existem usuários cadastrados
+    Quando eu consulto os usuários com campo de e-mail nulo ou vazio
+    Então a consulta deve retornar apenas registros inválidos
+
+  Cenário: Identificar datas de nascimento no futuro
+    Dado que existem registros com datas de nascimento
+    Quando eu consulto os usuários com data superior à data atual
+    Então a consulta deve retornar apenas usuários com data inválida
+
+  Cenário: Verificar CPFs duplicados
+    Dado que existem registros com CPF
+    Quando eu identifico CPFs com mais de um registro
+    Então o resultado deve conter apenas os CPFs duplicados
+
+  Cenário: Checar nomes ausentes
+    Dado que existem usuários cadastrados
+    Quando eu consulto por nomes nulos ou vazios
+    Então devo retornar apenas usuários com nome inválido
+
+  Cenário: Listar todos os status distintos
+    Dado que existe um campo status na tabela de usuários
+    Quando eu executo a query de valores distintos
+    Então devo visualizar todos os tipos de status cadastrados
